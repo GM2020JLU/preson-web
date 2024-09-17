@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 添加 marked 库的 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">赵菡</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">关于我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#photos">作品集</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5 pt-5">
+        <section id="about" class="min-vh-100 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="images/08.jpg" alt="赵菡的头像" class="rounded-circle img-fluid mb-3" id="profile-image">
+                    </div>
+                    <div class="col-md-8">
+                        <h2>关于我</h2>
+                        <p>大家好，我是赵菡。我是一个充满热情和好奇心的人，热爱探索世界的每一个角落。</p>
+                        <p>旅行是我生活中不可或缺的一部分。我喜欢感受不同文化的魅力，欣赏各地的自然风光，并在旅途中结识新朋友。每一次旅行都让我对这个世界有了新的认识和理解。</p>
+                        <p>美食是另一个让我着迷的领域。我喜欢品尝各地的特色菜肴，也乐于自己下厨尝试不同的烹饪方式。对我来说，美食不仅仅是味蕾的享受，更是了解一个地方文化的窗口。</p>
+                        <p>除此之外，我也热爱阅读、摄影和户外运动。这些爱好让我的生活更加丰富多彩，也让我不断成长和进步。</p>
+                        <p>欢迎来到我的个人网站，希望通过这里，我们能够相互了解，分享生活中的精彩瞬间！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="photos" class="min-vh-100 d-flex flex-column align-items-center justify-content-center">
+            <h2 class="section-title mb-4">我的照片集</h2>
+            <div id="photo-carousel" class="carousel slide w-100" data-bs-ride="carousel">
+                <div class="carousel-inner" id="carousel-inner">
+                    <!-- 照片将通过JavaScript动态添加 -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#photo-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">上一组</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#photo-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">下一组</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-3 bg-light text-center">
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="https://www.instagram.com/hecai_tou/" target="_blank" class="me-3" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/TouCai6078" target="_blank" class="me-3" title="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://space.bilibili.com/478286844?spm_id_from=333.1007.0.0" target="_blank" class="me-3" title="Bilibili"><i class="fab fa-bilibili"></i></a>
+                <a href="mailto:474949067@qq.com" class="me-3" title="QQ邮箱"><i class="fab fa-qq"></i></a>
+                <a href="mailto:hct2075990476@gmail.com" class="me-3" title="Gmail"><i class="fab fa-google"></i></a>
+            </div>
+            <p>&copy; 2023 我的个人网站. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
